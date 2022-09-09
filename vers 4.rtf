@@ -1,0 +1,1016 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;}
+{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+`Hey,\
+Note: In case of any queries, just comment in box I would be very happy to assist all your queries\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs26 \cf2 package 
+\f2\b0 com.capiot;\
+
+\f1\b import 
+\f2\b0 java.util.*;\
+\
+
+\f1\b public class 
+\f2\b0 Search \{\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //create enum for all the parts of speech\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 Speech\
+\{\
+    
+\f3\i ADJECTIVE
+\f2\i0 (
+\f1\b "Placeholder [adjective] : To be updated..."
+\f2\b0 ),\
+    
+\f3\i ADVERB
+\f2\i0 (
+\f1\b "Placeholder [adverb] : To be updated..."
+\f2\b0 ),\
+    
+\f3\i CONJUNCTION
+\f2\i0 (
+\f1\b "Placeholder [conjunction] : To be updated..."
+\f2\b0 ),\
+    
+\f3\i INTERJUNCTION
+\f2\i0 (
+\f1\b "Placeholder [interjunction] : To be updated..."
+\f2\b0 ),\
+    
+\f3\i NOUN
+\f2\i0 (
+\f1\b "Placeholder [noun] : To be updated..."
+\f2\b0 ),\
+    
+\f3\i PREPOSITION
+\f2\i0 (
+\f1\b "Placeholder [preposition] : To be updated..."
+\f2\b0 ),\
+    
+\f3\i PRONOUN
+\f2\i0 (
+\f1\b "Placeholder [pronoun] : To be updated..."
+\f2\b0 ),\
+    
+\f3\i VERB
+\f2\i0 (
+\f1\b "Placeholder [verb] : To be updated..."
+\f2\b0 );\
+\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    Speech(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\};\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for  definitions used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 Data\
+\{\
+    
+\f3\i LOADING
+\f2\i0 (
+\f1\b "! Loading data..."
+\f2\b0 ),\
+    
+\f3\i LOADING_COMPLETED
+\f2\i0 (
+\f1\b "! Loading completed..."
+\f2\b0 ),\
+    
+\f3\i PRINT
+\f2\i0 (
+\f1\b "-----DICTIONARY 340 JAVA----"
+\f2\b0 ),\
+    
+\f3\i OOPS
+\f2\i0 (
+\f1\b "arguments must be a part of a speech or \\"distinct\\""
+\f2\b0 ),\
+    
+\f3\i SEARCH
+\f2\i0 (
+\f1\b "Search: "
+\f2\b0 );\
+\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    Data(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\};\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for all the definitions of CSC210 used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 CSC210\
+\{\
+    
+\f3\i ADJECTIVE1
+\f2\i0 (
+\f1\b "CSC210 [adjective] : Comfortable with Objects and Classes"
+\f2\b0 ),\
+    
+\f3\i ADJECTIVE2
+\f2\i0 (
+\f1\b "CSC210 [adjective] : Ready for CSC 220"
+\f2\b0 ),\
+    
+\f3\i NOUN
+\f2\i0 (
+\f1\b "CSC210 [noun]Intro to Java "
+\f2\b0 ),\
+    
+\f3\i VERB
+\f2\i0 (
+\f1\b "CSC210 [verb] : To learn Java"
+\f2\b0 );\
+\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    CSC210(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\};\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for all the definitions of CSC340 used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 CSC340\{\
+    
+\f3\i ADJECTIVE
+\f2\i0 (
+\f1\b "CSC340 [adjective] : = C++ version of CSC210 + CSC220 + more."
+\f2\b0 ),\
+    
+\f3\i NOUN1
+\f2\i0 (
+\f1\b "CSC340 [noun] : A CS upper division course."
+\f2\b0 ),\
+    
+\f3\i NOUN2
+\f2\i0 (
+\f1\b "CSC340 [noun] : Many hours outside of class."
+\f2\b0 ),\
+    
+\f3\i NOUN3
+\f2\i0 (
+\f1\b "CSC340 [noun] : Programming Methodology."
+\f2\b0 );\
+\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    CSC340(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for all the definitions of Verb used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 Verb\{\
+    
+\f3\i Noun
+\f2\i0 (
+\f1\b "Verb [noun] : Verb is a word or group of words that expresses an action (such as eat), an event\\n" 
+\f2\b0 +\
+            
+\f1\b "(such as happen) or a state (such as exist)."
+\f2\b0 );\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    Verb(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for all the definitions of Book used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 Book \{\
+    
+\f3\i Noun1
+\f2\i0 (
+\f1\b "Book [noun] : A set of pages."
+\f2\b0 ),\
+    
+\f3\i Noun2
+\f2\i0 (
+\f1\b "Book [noun] : A written work published in printed or electronic form."
+\f2\b0 ),\
+    
+\f3\i Verb1
+\f2\i0 (
+\f1\b "Book [verb] : To arrange for someone to have a seat on a plane."
+\f2\b0 ),\
+    
+\f3\i Verb2
+\f2\i0 (
+\f1\b "Book [verb] : To arrange something on a particular date."
+\f2\b0 );\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    Book(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for all the definitions of Bookable used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 Bookable \{\
+    
+\f3\i ADJECTIVE
+\f2\i0 (
+\f1\b "Bookable [adjective] : Can be ordered in advance."
+\f2\b0 );\
+\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    Bookable(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for all the definitions of Conjunction used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 Conjunction \{\
+    
+\f3\i NOUN
+\f2\i0 (
+\f1\b "Conjunction [noun] : Conjunction is a word that joins words, phrases or sentences, for example 'and', 'but', 'or'."
+\f2\b0 );\
+\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    Conjunction(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for all the definitions of Interjection used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 Interjection \{\
+    
+\f3\i NOUN
+\f2\i0 (
+\f1\b "Interjection [noun] : Interjection is a short sound, word or phrase spoken suddenly to express an emotion. Oh!, Look out! and Ow! are interjections."
+\f2\b0 );\
+\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    Interjection(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for all the definitions of Adjective used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 Adjective \{\
+    
+\f3\i NOUN
+\f2\i0 (
+\f1\b "Adjective [noun] : Adjective is a word that describes a person or thing, for example big, red and clever in a big house, red wine and a clever idea."
+\f2\b0 );\
+\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    Adjective(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i \cf2 //creating enum for all the definitions of Exit used in this program\
+\pard\pardeftab720\partightenfactor0
+
+\f1\i0\b \cf2 enum 
+\f2\b0 Exit \{\
+    
+\f3\i NOTFOUND
+\f2\i0 (
+\f1\b "<Not found>"
+\f2\b0 ),\
+    
+\f3\i EXIT
+\f2\i0 (
+\f1\b "-----THANK YOU-----"
+\f2\b0 );\
+\
+    
+\f1\b private 
+\f2\b0 String 
+\f1\b value
+\f2\b0 ;\
+\
+    Exit(String s) \{ 
+\f1\b this
+\f2\b0 .
+\f1\b value 
+\f2\b0 = s; \}\
+\
+    
+\f1\b public 
+\f2\b0 String getValue() \{ 
+\f1\b return value
+\f2\b0 ; \}\
+\}\
+\
+
+\f1\b public static void 
+\f2\b0 main(String[] args) \{\
+\
+        System.
+\f3\i out
+\f2\i0 .println(Data.
+\f3\i LOADING
+\f2\i0 .getValue());\
+\
+        
+\f3\i //Generating all the values required in the dictionary by using the values from enum\
+        
+\f2\i0 List<String> noFilter = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        noFilter.add(Speech.
+\f3\i ADJECTIVE
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i ADJECTIVE
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i ADVERB
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i CONJUNCTION
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i INTERJUNCTION
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i NOUN
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i NOUN
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i NOUN
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i PREPOSITION
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i PRONOUN
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noFilter.add(Speech.
+\f3\i VERB
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+\
+        List<String> distinct = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        Arrays.
+\f3\i stream
+\f2\i0 (Speech.
+\f3\i values
+\f2\i0 ()).forEach(speech -> distinct.add(speech.
+\f1\b value
+\f2\b0 ));\
+\
+        List<String> noun = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        noun.add(Speech.
+\f3\i NOUN
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noun.add(Speech.
+\f3\i NOUN
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        noun.add(Speech.
+\f3\i NOUN
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+\
+        List<String> adjective = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        adjective.add(Speech.
+\f3\i ADJECTIVE
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+        adjective.add(Speech.
+\f3\i ADJECTIVE
+\f2\i0 .
+\f1\b value
+\f2\b0 );\
+\
+        List<String> csc210 = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        Arrays.
+\f3\i stream
+\f2\i0 (CSC210.
+\f3\i values
+\f2\i0 ()).forEach(speech -> csc210.add(speech.
+\f1\b value
+\f2\b0 ));\
+\
+        List<String> csc210noun = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        csc210noun.add(CSC210.
+\f3\i NOUN
+\f2\i0 .getValue());\
+\
+        List<String> csc210adjective = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        csc210adjective.add(CSC210.
+\f3\i ADJECTIVE1
+\f2\i0 .getValue());\
+        csc210adjective.add(CSC210.
+\f3\i ADJECTIVE2
+\f2\i0 .getValue());\
+\
+        List<String> csc210verb = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        csc210verb.add(CSC210.
+\f3\i VERB
+\f2\i0 .getValue());\
+\
+        List<String> cSC340 = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        Arrays.
+\f3\i stream
+\f2\i0 (CSC340.
+\f3\i values
+\f2\i0 ()).forEach(speech -> cSC340.add(speech.
+\f1\b value
+\f2\b0 ));\
+\
+        List<String> cSC340noun = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        cSC340noun.add(CSC340.
+\f3\i NOUN1
+\f2\i0 .getValue());\
+        cSC340noun.add(CSC340.
+\f3\i NOUN2
+\f2\i0 .getValue());\
+        cSC340noun.add(CSC340.
+\f3\i NOUN3
+\f2\i0 .getValue());\
+\
+        List<String> cSC340adjective = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        cSC340adjective.add(CSC340.
+\f3\i ADJECTIVE
+\f2\i0 .getValue());\
+\
+\
+        List<String> verb = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        Arrays.
+\f3\i stream
+\f2\i0 (Verb.
+\f3\i values
+\f2\i0 ()).forEach(value -> verb.add(value.
+\f1\b value
+\f2\b0 ));\
+\
+        List<String> book = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        Arrays.
+\f3\i stream
+\f2\i0 (Book.
+\f3\i values
+\f2\i0 ()).forEach(value -> book.add(value.
+\f1\b value
+\f2\b0 ));\
+\
+        List<String> booknoun = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        booknoun.add(Book.
+\f3\i Noun1
+\f2\i0 .getValue());\
+        booknoun.add(Book.
+\f3\i Noun2
+\f2\i0 .getValue());\
+\
+        List<String> bookverb = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        bookverb.add(Book.
+\f3\i Verb1
+\f2\i0 .getValue());\
+        bookverb.add(Book.
+\f3\i Verb2
+\f2\i0 .getValue());\
+\
+        List<String> bookable = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        bookable.add(Bookable.
+\f3\i ADJECTIVE
+\f2\i0 .getValue());\
+\
+        List<String> conjunction = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        conjunction.add(Conjunction.
+\f3\i NOUN
+\f2\i0 .getValue());\
+\
+        List<String> interjectionnoun = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        interjectionnoun.add(Interjection.
+\f3\i NOUN
+\f2\i0 .getValue());\
+\
+        List<String> adjectivenoun = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        adjectivenoun.add(Adjective.
+\f3\i NOUN
+\f2\i0 .getValue());\
+\
+        List<String> exit = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        exit.add(Exit.
+\f3\i EXIT
+\f2\i0 .getValue());\
+\
+        List<String> notFound = 
+\f1\b new 
+\f2\b0 ArrayList<>();\
+        notFound.add(Exit.
+\f3\i NOTFOUND
+\f2\i0 .getValue());\
+\
+        
+\f3\i //Generating the dictionary and mapping the key-value pairs\
+        
+\f2\i0 Map<String, Object> dictionary = 
+\f1\b new 
+\f2\b0 HashMap<>();\
+        dictionary.put(
+\f1\b "placeholder"
+\f2\b0 ,noFilter);\
+        dictionary.put(
+\f1\b "distinct"
+\f2\b0 , distinct);\
+        dictionary.put(
+\f1\b "noun"
+\f2\b0 , noun);\
+        dictionary.put(
+\f1\b "adjective"
+\f2\b0 , adjective);\
+        dictionary.put(
+\f1\b "oops"
+\f2\b0 , Arrays.
+\f3\i asList
+\f2\i0 (Data.
+\f3\i OOPS
+\f2\i0 .getValue()));\
+        dictionary.put(
+\f1\b "csc210"
+\f2\b0 , csc210);\
+        dictionary.put(
+\f1\b "csc210noun"
+\f2\b0 , csc210noun);\
+        dictionary.put(
+\f1\b "csc210adjective"
+\f2\b0 , csc210adjective);\
+        dictionary.put(
+\f1\b "csc210verb"
+\f2\b0 , csc210verb);\
+        dictionary.put(
+\f1\b "csc340"
+\f2\b0 , cSC340);\
+        dictionary.put(
+\f1\b "csc340noun"
+\f2\b0 , cSC340noun);\
+        dictionary.put(
+\f1\b "csc340adjective"
+\f2\b0 , cSC340adjective);\
+        dictionary.put(
+\f1\b "verb"
+\f2\b0 , verb);\
+        dictionary.put(
+\f1\b "verbnoun"
+\f2\b0 , verb);\
+        dictionary.put(
+\f1\b "book"
+\f2\b0 , book);\
+        dictionary.put(
+\f1\b "booknoun"
+\f2\b0 , booknoun);\
+        dictionary.put(
+\f1\b "bookverb"
+\f2\b0 , bookverb);\
+        dictionary.put(
+\f1\b "bookable"
+\f2\b0 , bookable);\
+        dictionary.put(
+\f1\b "conjunction"
+\f2\b0 , conjunction);\
+        dictionary.put(
+\f1\b "interjectionnoun"
+\f2\b0 , interjectionnoun);\
+        dictionary.put(
+\f1\b "adjectivenoun"
+\f2\b0 , adjectivenoun);\
+        dictionary.put(
+\f1\b "exit"
+\f2\b0 , exit);\
+        dictionary.put(
+\f1\b "notFound"
+\f2\b0 , notFound);\
+\
+        System.
+\f3\i out
+\f2\i0 .println(Data.
+\f3\i LOADING_COMPLETED
+\f2\i0 .getValue());\
+        System.
+\f3\i out
+\f2\i0 .println();\
+        System.
+\f3\i out
+\f2\i0 .println(Data.
+\f3\i PRINT
+\f2\i0 .getValue());\
+        System.
+\f3\i out
+\f2\i0 .println();\
+\
+        
+\f3\i //Taking the input search parameter from user and displaying the required data from the dictionary using the search key\
+        
+\f1\i0\b while 
+\f2\b0 (
+\f1\b true
+\f2\b0 ) \{\
+        Scanner reader = 
+\f1\b new 
+\f2\b0 Scanner(System.
+\f3\i in
+\f2\i0 );\
+        String userInput = 
+\f1\b null
+\f2\b0 ;\
+        String search = 
+\f1\b null
+\f2\b0 ;\
+        System.
+\f3\i out
+\f2\i0 .print(Data.
+\f3\i SEARCH
+\f2\i0 .getValue());\
+        userInput = reader.nextLine();\
+\
+        
+\f3\i //checking the number of arguments given by the user and handling the program accordingly so that it will not break\
+        
+\f2\i0 String[] arr=userInput.split(
+\f1\b " "
+\f2\b0 );\
+        
+\f1\b if 
+\f2\b0 (arr.
+\f1\b length
+\f2\b0 ==1) \{\
+            search = arr[0];\
+            
+\f3\i getSearchResults
+\f2\i0 (search, 
+\f1\b null
+\f2\b0 , dictionary);\
+        \}\
+        
+\f1\b else if 
+\f2\b0 (arr.
+\f1\b length
+\f2\b0 ==2) \{\
+            
+\f1\b if 
+\f2\b0 (arr[0].equalsIgnoreCase(
+\f1\b "placeholder"
+\f2\b0 ))\
+                search = arr[1];\
+            
+\f1\b else 
+\f2\b0 search = arr[0] + arr[1];\
+            
+\f3\i getSearchResults
+\f2\i0 (search,
+\f1\b null
+\f2\b0 ,dictionary);\
+        \}\
+        
+\f1\b else if 
+\f2\b0 (arr.
+\f1\b length
+\f2\b0 ==3) \{\
+            
+\f1\b if 
+\f2\b0 (arr[0].equalsIgnoreCase(
+\f1\b "placeholder"
+\f2\b0 ))\
+                search = arr[1];\
+            
+\f1\b else 
+\f2\b0 search = arr[0] + arr[1];\
+            
+\f3\i getSearchResults
+\f2\i0 (search, arr[2], dictionary);\
+        \}\
+        \}\
+\}\
+\
+
+\f1\b public static void 
+\f2\b0 getSearchResults(String name, String arg2, Map dictionary)\{\
+        System.
+\f3\i out
+\f2\i0 .println(
+\f1\b "   |" 
+\f2\b0 );\
+        List<String> searchResult=
+\f1\b null
+\f2\b0 ;\
+        
+\f1\b if 
+\f2\b0 (name.equalsIgnoreCase(
+\f1\b "!Q"
+\f2\b0 ))\{\
+            searchResult = (List<String>) dictionary.get(
+\f1\b "exit"
+\f2\b0 );\
+        \}\
+        
+\f1\b else if 
+\f2\b0 (dictionary.containsKey(name)) \{\
+         searchResult = (List<String>) dictionary.get(name);\
+        \}\
+        
+\f1\b else 
+\f2\b0 searchResult = (List<String>) dictionary.get(
+\f1\b "notFound"
+\f2\b0 );\
+\
+        
+\f1\b if 
+\f2\b0 (arg2!=
+\f1\b null 
+\f2\b0 && arg2.equalsIgnoreCase(
+\f1\b "distinct"
+\f2\b0 ))\{\
+        
+\f1\b new 
+\f2\b0 HashSet<>(searchResult).stream().forEach(s -> \{\
+            System.
+\f3\i out
+\f2\i0 .print(
+\f1\b "     "
+\f2\b0 );\
+            System.
+\f3\i out
+\f2\i0 .println(s);\
+        \});\
+        \}\
+        
+\f1\b else 
+\f2\b0 \{\
+        searchResult.stream().forEach(s -> \{\
+        System.
+\f3\i out
+\f2\i0 .print(
+\f1\b "     "
+\f2\b0 );\
+        System.
+\f3\i out
+\f2\i0 .println(s);\
+        \});\
+        \}\
+\
+        System.
+\f3\i out
+\f2\i0 .println(
+\f1\b "   |" 
+\f2\b0 );\
+        
+\f1\b if 
+\f2\b0 (name.equalsIgnoreCase(
+\f1\b "!Q"
+\f2\b0 ))\{\
+          System.
+\f3\i exit
+\f2\i0 (0);\
+        \}\
+\}\
+\}}
